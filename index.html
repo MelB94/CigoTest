@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cigo Test - Tabaksspeciaalzaak</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>🚬 Cigo Test</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" onclick="scrollToSection('home')">Home</a></li>
+                    <li><a href="#over-ons" onclick="scrollToSection('over-ons')">Over Ons</a></li>
+                    <li><a href="#producten" onclick="scrollToSection('producten')">Producten</a></li>
+                    <li><a href="#aanbiedingen" onclick="scrollToSection('aanbiedingen')">Aanbiedingen</a></li>
+                    <li><a href="#winkel" onclick="scrollToSection('winkel')">Winkel</a></li>
+                    <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <button onclick="setLanguage('nl')" class="lang-btn active" id="btn-nl">NL</button>
+                    <button onclick="setLanguage('en')" class="lang-btn" id="btn-en">EN</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 data-i18n="hero_title">Welkom bij Cigo Test</h2>
+                <p data-i18n="hero_subtitle">Uw toonaangevende tabaksspeciaalzaak met premium producten</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('winkel')" data-i18n="hero_button">Ontdek Onze Winkel</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('aanbiedingen')" data-i18n="hero_button2">Bekijk Aanbiedingen</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Over Ons Section -->
+    <section id="over-ons" class="about">
+        <div class="container">
+            <h2 data-i18n="about_title">Over Cigo Test</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-i18n="about_text">Cigo Test is een gespecialiseerde tabaksspeciaalzaak met jaren ervaring in het aanbieden van hoogwaardige producten. Wij bieden een uitgebreide selectie van fijne tabakswaren, sigaren, magazines en unieke geschenkartikelen.</p>
+                    <ul class="about-list">
+                        <li data-i18n="about_point1">✓ Premium selectie tabak en sigaren</li>
+                        <li data-i18n="about_point2">✓ Staatsloterij kaarten en gokproducten</li>
+                        <li data-i18n="about_point3">✓ Ruime keuze aan lektuur</li>
+                        <li data-i18n="about_point4">✓ Geschenken en accessoires</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder-image">🏪</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Producten Section -->
+    <section id="producten" class="products">
+        <div class="container">
+            <h2 data-i18n="products_title">Onze Producten</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">🚬</div>
+                    <h3 data-i18n="product_tobacco">Tabak</h3>
+                    <p data-i18n="product_tobacco_desc">Premium tabakswaren van de beste merken</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🎁</div>
+                    <h3 data-i18n="product_cigars">Sigaren</h3>
+                    <p data-i18n="product_cigars_desc">Exclusieve sigaren collectie</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🎰</div>
+                    <h3 data-i18n="product_lottery">Staatsloterij</h3>
+                    <p data-i18n="product_lottery_desc">Staatsloterij kaarten en scratchcards</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">📰</div>
+                    <h3 data-i18n="product_magazines">Tijdschriften</h3>
+                    <p data-i18n="product_magazines_desc">Breed aanbod van magazines en kranten</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">📌</div>
+                    <h3 data-i18n="product_office">Kantoorartikelen</h3>
+                    <p data-i18n="product_office_desc">Alles voor uw kantoor en administratie</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🕯️</div>
+                    <h3 data-i18n="product_gifts">Geschenken</h3>
+                    <p data-i18n="product_gifts_desc">Geurkaarsen en originele kleinigheden</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aanbiedingen Section -->
+    <section id="aanbiedingen" class="offers">
+        <div class="container">
+            <h2 data-i18n="offers_title">Actuele Aanbiedingen</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-badge" data-i18n="offer_badge">AANBIEDING</div>
+                    <h3 data-i18n="offer_1_title">Premium Sigaren Selectie</h3>
+                    <p data-i18n="offer_1_desc">20% korting op geselecteerde sigarenmerken</p>
+                    <p class="offer-price">Tot 20% korting</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-badge" data-i18n="offer_badge">AANBIEDING</div>
+                    <h3 data-i18n="offer_2_title">Staatsloterij Bundel</h3>
+                    <p data-i18n="offer_2_desc">Koop 5 kaarten, krijg 1 gratis!</p>
+                    <p class="offer-price">+1 gratis kaart</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-badge" data-i18n="offer_badge">AANBIEDING</div>
+                    <h3 data-i18n="offer_3_title">Geschenkset Geurkaarsen</h3>
+                    <p data-i18n="offer_3_desc">Luxe geurkaarsenset nu in de aanbieding</p>
+                    <p class="offer-price">€19,99</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Winkel Section -->
+    <section id="winkel" class="shop">
+        <div class="container">
+            <h2 data-i18n="shop_title">Onze Winkel</h2>
+            <div class="shop-content">
+                <div class="shop-info">
+                    <h3 data-i18n="shop_info_title">Bezoek Ons</h3>
+                    <div class="shop-details">
+                        <p><strong data-i18n="shop_address">Adres:</strong> Fictieve Straat 123, Amsterdam</p>
+                        <p><strong data-i18n="shop_phone">Telefoonnummer:</strong> +31 (0)20 555 0123</p>
+                        <p><strong data-i18n="shop_email">Email:</strong> info@cigotest.nl</p>
+                    </div>
+                    <h3 data-i18n="shop_hours">Openingstijden</h3>
+                    <div class="shop-hours">
+                        <p>Maandag - Vrijdag: 09:00 - 18:00</p>
+                        <p>Zaterdag: 10:00 - 17:00</p>
+                        <p>Zondag: Gesloten</p>
+                    </div>
+                </div>
+                <div class="shop-products">
+                    <h3 data-i18n="shop_available">Beschikbare Producten in Winkel</h3>
+                    <ul class="shop-list">
+                        <li>✓ <span data-i18n="shop_product_tobacco">Premium tabak uit binnen- en buitenland</span></li>
+                        <li>✓ <span data-i18n="shop_product_cigars">Fijne sigaarselectie van topmerken</span></li>
+                        <li>✓ <span data-i18n="shop_product_lottery">Staatsloterij en verschillende scratchcards</span></li>
+                        <li>✓ <span data-i18n="shop_product_magazines">Nationale en internationale magazines</span></li>
+                        <li>✓ <span data-i18n="shop_product_office">Volledige kantoorartikelensortiment</span></li>
+                        <li>✓ <span data-i18n="shop_product_gifts">Geurkaarsen en originele geschenken</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-i18n="contact_title">Contact</h2>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name" data-i18n="form_name">Naam:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" data-i18n="form_email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" data-i18n="form_message">Bericht:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" data-i18n="form_submit">Verstuur</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer_text">&copy; 2026 Cigo Test. Alle rechten voorbehouden.</p>
+            <p data-i18n="footer_note">Dit is een oefenproject voor portfolio-doeleinden.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
